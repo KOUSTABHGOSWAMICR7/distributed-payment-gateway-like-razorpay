@@ -61,7 +61,6 @@ public class ApiKeyServiceImpl implements ApiKeyService {
     @Override
     public List<ApiKeyResponse> listByMerchant(UUID merchantId) {
         return apiKeyMapper.toResponseList(apiKeyRepository.findByMerchant_Id(merchantId));
-
     }
 
     @Override
@@ -77,7 +76,7 @@ public class ApiKeyServiceImpl implements ApiKeyService {
 
     @Override
     @Transactional
-    public @Nullable ApiKeyCreateResponse rotate(UUID merchantId, UUID keyId) {
+    public ApiKeyCreateResponse rotate(UUID merchantId, UUID keyId) {
         ApiKey apiKey = apiKeyRepository.findById(keyId)
                 .filter(k -> k.getMerchant().getId().equals(merchantId))
                 .orElseThrow(() -> new ResourceNotFoundException("ApiKey", keyId));

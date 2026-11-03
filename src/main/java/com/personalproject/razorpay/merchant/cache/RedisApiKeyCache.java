@@ -41,7 +41,7 @@ public class RedisApiKeyCache implements ApiKeyCache {
                     objectMapper.writeValueAsString(entry),
                     TTL);
         } catch (Exception e) {
-            log.warn("ApiKey cache put filed, keyId: {}", keyId);
+            log.warn("ApiKey cache put failed, keyId: {}", keyId);
         }
     }
 
