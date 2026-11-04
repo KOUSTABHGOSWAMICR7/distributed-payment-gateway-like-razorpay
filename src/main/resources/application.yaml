@@ -48,3 +48,5 @@ app:
     use-case:
       api-key:
         requests-per-minute: 2
+
+
