@@ -1,9 +1,6 @@
 package com.personalproject.razorpay.payment.service.impl;
 
-import com.personalproject.razorpay.common.enums.OrderStatus;
-import com.personalproject.razorpay.common.enums.PaymentEvent;
-import com.personalproject.razorpay.common.enums.PaymentMethod;
-import com.personalproject.razorpay.common.enums.PaymentStatus;
+import com.personalproject.razorpay.common.enums.*;
 import com.personalproject.razorpay.common.exception.BusinessRuleViolationException;
 import com.personalproject.razorpay.common.exception.ResourceNotFoundException;
 import com.personalproject.razorpay.payment.dto.request.PaymentInitRequest;
@@ -14,6 +11,7 @@ import com.personalproject.razorpay.payment.gateway.PaymentGatewayRouter;
 import com.personalproject.razorpay.payment.gateway.dto.PaymentRequest;
 import com.personalproject.razorpay.payment.gateway.dto.PaymentResult;
 import com.personalproject.razorpay.payment.mapper.PaymentMapper;
+import com.personalproject.razorpay.payment.outbox.OutboxEventPublisher;
 import com.personalproject.razorpay.payment.repository.OrderRepository;
 import com.personalproject.razorpay.payment.repository.PaymentRepository;
 import com.personalproject.razorpay.payment.service.PaymentService;
@@ -25,6 +23,7 @@ import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.util.Map;
 import java.util.UUID;
 
 @Service
@@ -37,6 +36,7 @@ public class PaymentServiceImpl implements PaymentService {
     private final PaymentGatewayRouter paymentGatewayRouter;
     private final PaymentMapper paymentMapper;
     private final PaymentTransitionService paymentTransitionService;
+    private final OutboxEventPublisher eventPublisher;
 
     @Override
     @Transactional
@@ -91,7 +91,16 @@ public class PaymentServiceImpl implements PaymentService {
         payment = paymentRepository.save(payment);
         orderRepository.save(order);
 
-        // TODO: send an outbox (kafka event)
+        eventPublisher.publish(EventAggregateType.PAYMENT, payment.getId(), "PAYMENT_CREATED",
+                Map.of("orderId", order.getId().toString(),
+                        "paymentId", payment.getId().toString(),
+                        "merchantId", merchantId.toString(),
+                        "paymentStatus", payment.getStatus().name(),
+                        "amountUnits", order.getAmount().getAmountUnits(),
+                        "amountCurrency", order.getAmount().getCurrency(),
+                        "paymentMethod", payment.getMethod()
+                )
+        );
 
         return paymentMapper.toResponse(payment);
     }
@@ -123,7 +132,16 @@ public class PaymentServiceImpl implements PaymentService {
 
         payment = paymentRepository.save(payment);
 
-//        TODO: send an outbox (kafka event)
+        eventPublisher.publish(EventAggregateType.PAYMENT, payment.getId(), "PAYMENT_STATUS_CHANGED",
+                Map.of("orderId", payment.getOrder().getId().toString(),
+                        "paymentId", payment.getId().toString(),
+                        "merchantId", merchantId.toString(),
+                        "paymentStatus", payment.getStatus().name(),
+                        "amountUnits", payment.getAmount().getAmountUnits(),
+                        "amountCurrency", payment.getAmount().getCurrency(),
+                        "paymentMethod", payment.getMethod()
+                )
+        );
 
         return paymentMapper.toResponse(payment);
     }
@@ -173,13 +191,18 @@ public class PaymentServiceImpl implements PaymentService {
         paymentRepository.save(payment);
         orderRepository.save(orderRecord);
 
-        // TODO: send an outbox (kafka event)
+        eventPublisher.publish(EventAggregateType.PAYMENT, payment.getId(), "PAYMENT_STATUS_CHANGED",
+                Map.of("orderId", payment.getOrder().getId().toString(),
+                        "paymentId", payment.getId().toString(),
+                        "merchantId", payment.getMerchantId().toString(),
+                        "paymentStatus", payment.getStatus().name(),
+                        "amountUnits", payment.getAmount().getAmountUnits(),
+                        "amountCurrency", payment.getAmount().getCurrency(),
+                        "paymentMethod", payment.getMethod()
+                )
+        );
     }
 }
-
-// open for extension
-// closed for modification
-
 
 
 
