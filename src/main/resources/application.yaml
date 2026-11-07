@@ -46,6 +46,7 @@ spring:
         spring.json.use.type.headers: false
         spring.json.value.default.type: java.util.LinkedHashMap
 
+
   payment:
     simulator:
       poll-interval-ms: 5000
