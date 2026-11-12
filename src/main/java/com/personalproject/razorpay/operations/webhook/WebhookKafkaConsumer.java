@@ -51,7 +51,7 @@ public class WebhookKafkaConsumer {
 
             UUID merchantId = UUID.fromString(merchantIdRaw.toString());
 
-            List<WebhookTarget> targets = merchantWebhookApi.getActiveConfigsForEvent(merchantId, eventType);
+            List<WebhookTarget> targets = merchantWebhookApi.getActiveConfigsForEvent(merchantId, eventType); //getting all the url for a specific event
             if (targets.isEmpty()) {
                 log.debug("No webhook target was found, skipping event: {}", eventType);
                 ack.acknowledge();
@@ -76,7 +76,7 @@ public class WebhookKafkaConsumer {
 
                 webhookEvent = webhookEventRepository.save(webhookEvent);
 
-                retryQueue.enqueue(webhookEvent.getId(), webhookEvent.getNextRetryAt());
+                retryQueue.enqueue(webhookEvent.getId(), webhookEvent.getNextRetryAt()); //save this and enqueue it for the first time
             }
 
             ack.acknowledge();

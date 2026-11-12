@@ -39,7 +39,7 @@ public class WebhookDeliveryScheduler {
 
 
     @Scheduled(fixedDelay = 10000)
-    public void reconcileFromDatabase() {
+    public void reconcileFromDatabase() { // Add the events which are not added in the queue due to some errors
         LocalDateTime now = LocalDateTime.now();
         List<WebhookEvent> due = webhookEventRepository
                 .findByStatusAndNextRetryAtBefore(WebhookEventStatus.PENDING, now);
