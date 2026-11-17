@@ -1,7 +1,7 @@
-package com.personalproject.razorpay.merchant.service;
+package com.codingshuttle.razorpay.merchant.service;
 
-import com.personalproject.razorpay.merchant.dto.request.UpdateWebhookConfigRequest;
-import com.personalproject.razorpay.merchant.dto.response.WebhookConfigResponse;
+import com.codingshuttle.razorpay.merchant.dto.request.UpdateWebhookConfigRequest;
+import com.codingshuttle.razorpay.merchant.dto.response.WebhookConfigResponse;
 
 import java.util.List;
 import java.util.UUID;

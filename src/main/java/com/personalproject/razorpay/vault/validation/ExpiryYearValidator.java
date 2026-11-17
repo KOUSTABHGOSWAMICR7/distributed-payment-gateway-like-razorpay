@@ -1,4 +1,4 @@
-package com.personalproject.razorpay.vault.validation;
+package com.codingshuttle.razorpay.vault.validation;
 
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;

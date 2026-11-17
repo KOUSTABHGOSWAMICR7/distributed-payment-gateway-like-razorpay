@@ -1,4 +1,4 @@
-package com.personalproject.razorpay.common.util;
+package com.codingshuttle.razorpay.common.util;
 
 import java.security.SecureRandom;
 import java.util.Base64;

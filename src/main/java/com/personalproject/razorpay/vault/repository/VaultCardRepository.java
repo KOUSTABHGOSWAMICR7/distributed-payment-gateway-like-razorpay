@@ -1,6 +1,6 @@
-package com.personalproject.razorpay.vault.repository;
+package com.codingshuttle.razorpay.vault.repository;
 
-import com.personalproject.razorpay.vault.entity.VaultCard;
+import com.codingshuttle.razorpay.vault.entity.VaultCard;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

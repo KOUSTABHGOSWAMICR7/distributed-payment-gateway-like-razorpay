@@ -1,4 +1,4 @@
-package com.personalproject.razorpay.common.ratelimit;
+package com.codingshuttle.razorpay.common.ratelimit;
 
 public record RateLimitResult(boolean isAllowed, int remaining, int retryAfterSeconds) {
 

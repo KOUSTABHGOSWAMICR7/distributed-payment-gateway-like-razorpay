@@ -1,11 +1,11 @@
-package com.personalproject.razorpay.operations.webhook;
+package com.codingshuttle.razorpay.operations.webhook;
 
-import com.personalproject.razorpay.common.dto.WebhookTarget;
-import com.personalproject.razorpay.common.enums.WebhookEventStatus;
-import com.personalproject.razorpay.common.util.SignerUtil;
-import com.personalproject.razorpay.merchant.api.MerchantWebhookApi;
-import com.personalproject.razorpay.operations.entity.WebhookEvent;
-import com.personalproject.razorpay.operations.repository.WebhookEventRepository;
+import com.codingshuttle.razorpay.common.dto.WebhookTarget;
+import com.codingshuttle.razorpay.common.enums.WebhookEventStatus;
+import com.codingshuttle.razorpay.common.util.SignerUtil;
+import com.codingshuttle.razorpay.merchant.api.MerchantLookupService;
+import com.codingshuttle.razorpay.operations.entity.WebhookEvent;
+import com.codingshuttle.razorpay.operations.repository.WebhookEventRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -26,7 +26,7 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class WebhookKafkaConsumer {
 
-    private final MerchantWebhookApi merchantWebhookApi;
+    private final MerchantLookupService merchantLookupService;
     private final ObjectMapper objectMapper;
     private final SignerUtil signerUtil;
     private final WebhookEventRepository webhookEventRepository;
@@ -54,7 +54,7 @@ public class WebhookKafkaConsumer {
 
             UUID merchantId = UUID.fromString(merchantIdRaw.toString());
 
-            List<WebhookTarget> targets = merchantWebhookApi.getActiveConfigsForEvent(merchantId, eventType);
+            List<WebhookTarget> targets = merchantLookupService.getActiveConfigsForEvent(merchantId, eventType);
             if (targets.isEmpty()) {
                 log.debug("No webhook target was found, skipping event: {}", eventType);
                 ack.acknowledge();
@@ -88,7 +88,7 @@ public class WebhookKafkaConsumer {
         } catch (Exception logicError) {
             log.error("Webhook consumer failed due to logical error, Could not process the record, offset: {}", record.offset(), logicError);
             dlqRecorder.recordConsumerFailed(record, logicError.getMessage());
-
+            ack.acknowledge();
         }
     }
 }

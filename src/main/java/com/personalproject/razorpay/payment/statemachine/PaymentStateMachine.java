@@ -1,8 +1,8 @@
-package com.personalproject.razorpay.payment.statemachine;
+package com.codingshuttle.razorpay.payment.statemachine;
 
-import com.personalproject.razorpay.common.enums.PaymentEvent;
-import com.personalproject.razorpay.common.enums.PaymentStatus;
-import com.personalproject.razorpay.common.exception.InvalidStateTransitionException;
+import com.codingshuttle.razorpay.common.enums.PaymentEvent;
+import com.codingshuttle.razorpay.common.enums.PaymentStatus;
+import com.codingshuttle.razorpay.common.exception.InvalidStateTransitionException;
 import org.springframework.stereotype.Component;
 
 import java.util.Map;

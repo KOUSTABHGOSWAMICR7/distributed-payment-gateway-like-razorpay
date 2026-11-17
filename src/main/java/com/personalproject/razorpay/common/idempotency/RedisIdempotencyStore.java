@@ -1,4 +1,4 @@
-package com.personalproject.razorpay.common.idempotency;
+package com.codingshuttle.razorpay.common.idempotency;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

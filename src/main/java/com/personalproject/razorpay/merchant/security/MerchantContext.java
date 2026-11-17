@@ -1,4 +1,4 @@
-package com.personalproject.razorpay.merchant.security;
+package com.codingshuttle.razorpay.merchant.security;
 
 import lombok.Getter;
 import lombok.Setter;

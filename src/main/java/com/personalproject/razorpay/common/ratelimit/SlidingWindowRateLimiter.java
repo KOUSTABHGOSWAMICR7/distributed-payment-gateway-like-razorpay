@@ -1,4 +1,4 @@
-package com.personalproject.razorpay.common.ratelimit;
+package com.codingshuttle.razorpay.common.ratelimit;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
@@ -38,7 +38,7 @@ public class SlidingWindowRateLimiter implements RateLimiter{
             if ((oldest != null && !oldest.isEmpty())) {
                 Double oldestScore = oldest.iterator().next().getScore();
                 if (oldestScore != null) {
-                    long windowExpiresMs = oldestScore.longValue() + windowSeconds * 1000;
+                    long windowExpiresMs = oldestScore.longValue() + windowSeconds*1000;
                     retryAfter = (int) Math.ceil((windowExpiresMs - nowMs) / 1000.0);
                 }
             }

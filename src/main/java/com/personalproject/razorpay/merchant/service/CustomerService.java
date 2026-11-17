@@ -1,4 +1,4 @@
-package com.personalproject.razorpay.merchant.service;
+package com.codingshuttle.razorpay.merchant.service;
 
 import java.util.UUID;
 

@@ -1,7 +1,7 @@
-package com.personalproject.razorpay.payment.dto.response;
+package com.codingshuttle.razorpay.payment.dto.response;
 
-import com.personalproject.razorpay.common.entity.Money;
-import com.personalproject.razorpay.common.enums.OrderStatus;
+import com.codingshuttle.razorpay.common.entity.Money;
+import com.codingshuttle.razorpay.common.enums.OrderStatus;
 
 import java.time.LocalDateTime;
 import java.util.Map;

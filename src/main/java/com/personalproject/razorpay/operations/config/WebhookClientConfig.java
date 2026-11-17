@@ -1,4 +1,4 @@
-package com.personalproject.razorpay.operations.config;
+package com.codingshuttle.razorpay.operations.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

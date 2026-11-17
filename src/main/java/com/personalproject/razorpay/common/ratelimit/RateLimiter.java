@@ -1,4 +1,4 @@
-package com.personalproject.razorpay.common.ratelimit;
+package com.codingshuttle.razorpay.common.ratelimit;
 
 public interface RateLimiter {
 

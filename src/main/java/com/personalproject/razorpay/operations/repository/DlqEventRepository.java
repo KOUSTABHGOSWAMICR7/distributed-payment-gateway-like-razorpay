@@ -1,6 +1,6 @@
-package com.personalproject.razorpay.operations.repository;
+package com.codingshuttle.razorpay.operations.repository;
 
-import com.personalproject.razorpay.operations.entity.DlqEvent;
+import com.codingshuttle.razorpay.operations.entity.DlqEvent;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

@@ -1,7 +1,7 @@
-package com.personalproject.razorpay.merchant.entity;
+package com.codingshuttle.razorpay.merchant.entity;
 
-import com.personalproject.razorpay.common.entity.BaseEntity;
-import com.personalproject.razorpay.common.enums.UserRole;
+import com.codingshuttle.razorpay.common.entity.BaseEntity;
+import com.codingshuttle.razorpay.common.enums.UserRole;
 import jakarta.persistence.*;
 import lombok.*;
 import org.jspecify.annotations.Nullable;

@@ -1,4 +1,4 @@
-package com.personalproject.razorpay.payment.gateway.dto;
+package com.codingshuttle.razorpay.payment.gateway.dto;
 
 public sealed interface PaymentResult permits PaymentResult.Pending, PaymentResult.Failure, PaymentResult.Success{
 

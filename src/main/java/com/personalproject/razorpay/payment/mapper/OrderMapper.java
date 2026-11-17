@@ -1,7 +1,7 @@
-package com.personalproject.razorpay.payment.mapper;
+package com.codingshuttle.razorpay.payment.mapper;
 
-import com.personalproject.razorpay.payment.dto.response.OrderResponse;
-import com.personalproject.razorpay.payment.entity.OrderRecord;
+import com.codingshuttle.razorpay.payment.dto.response.OrderResponse;
+import com.codingshuttle.razorpay.payment.entity.OrderRecord;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
 

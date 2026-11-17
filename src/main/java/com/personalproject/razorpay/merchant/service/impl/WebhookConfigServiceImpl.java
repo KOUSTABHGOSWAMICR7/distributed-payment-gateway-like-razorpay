@@ -1,24 +1,24 @@
-package com.personalproject.razorpay.merchant.service.impl;
+package com.codingshuttle.razorpay.merchant.service.impl;
 
-import com.personalproject.razorpay.common.exception.ResourceNotFoundException;
-import com.personalproject.razorpay.common.util.RandomizerUtil;
-import com.personalproject.razorpay.merchant.api.MerchantWebhookApi;
-import com.personalproject.razorpay.merchant.dto.request.UpdateWebhookConfigRequest;
-import com.personalproject.razorpay.merchant.dto.response.WebhookConfigResponse;
-import com.personalproject.razorpay.common.dto.WebhookTarget;
-import com.personalproject.razorpay.merchant.entity.Merchant;
-import com.personalproject.razorpay.merchant.entity.MerchantWebhookConfig;
-import com.personalproject.razorpay.merchant.mapper.WebhookConfigMapper;
-import com.personalproject.razorpay.merchant.repository.MerchantRepository;
-import com.personalproject.razorpay.merchant.repository.WebhookConfigRepository;
-import com.personalproject.razorpay.merchant.service.WebhookConfigService;
+import com.codingshuttle.razorpay.common.enums.MerchantStatus;
+import com.codingshuttle.razorpay.common.exception.ResourceNotFoundException;
+import com.codingshuttle.razorpay.common.util.RandomizerUtil;
+import com.codingshuttle.razorpay.merchant.api.MerchantLookupService;
+import com.codingshuttle.razorpay.merchant.dto.request.UpdateWebhookConfigRequest;
+import com.codingshuttle.razorpay.merchant.dto.response.WebhookConfigResponse;
+import com.codingshuttle.razorpay.common.dto.WebhookTarget;
+import com.codingshuttle.razorpay.merchant.entity.Merchant;
+import com.codingshuttle.razorpay.merchant.entity.MerchantWebhookConfig;
+import com.codingshuttle.razorpay.merchant.mapper.WebhookConfigMapper;
+import com.codingshuttle.razorpay.merchant.repository.MerchantRepository;
+import com.codingshuttle.razorpay.merchant.repository.WebhookConfigRepository;
+import com.codingshuttle.razorpay.merchant.service.WebhookConfigService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.encrypt.BytesEncryptor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.List;
@@ -27,7 +27,7 @@ import java.util.UUID;
 @Service
 @RequiredArgsConstructor
 @Slf4j
-public class WebhookConfigServiceImpl implements WebhookConfigService, MerchantWebhookApi {
+public class WebhookConfigServiceImpl implements WebhookConfigService {
 
     private final MerchantRepository merchantRepository;
     private final WebhookConfigRepository merchantWebhookConfigRepository;
@@ -92,19 +92,6 @@ public class WebhookConfigServiceImpl implements WebhookConfigService, MerchantW
     private MerchantWebhookConfig requireOwnedConfig(UUID merchantId, UUID configId) {
         return merchantWebhookConfigRepository.findByIdAndMerchant_Id(configId, merchantId)
                 .orElseThrow(() -> new ResourceNotFoundException("MerchantWebhookConfig", configId));
-    }
-
-    @Override
-    public List<WebhookTarget> getActiveConfigsForEvent(UUID merchantId, String eventType) {
-        return merchantWebhookConfigRepository.findByMerchant_IdAndEnabledTrue(merchantId).stream()
-                .filter(config -> config.isSubscribedTo(eventType))
-                .map(config -> {
-                    byte[] cipherBytes = Base64.getDecoder().decode(config.getWebhookSecret());
-                    byte[] decryptedSecretBytes = bytesEncryptor.decrypt(cipherBytes);
-                    return new WebhookTarget(config.getId(), config.getTargetUrl(),
-                            new String(decryptedSecretBytes, StandardCharsets.UTF_8));
-                })
-                .toList();
     }
 }
 

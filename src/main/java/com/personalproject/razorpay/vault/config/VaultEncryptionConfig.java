@@ -1,4 +1,4 @@
-package com.personalproject.razorpay.vault.config;
+package com.codingshuttle.razorpay.vault.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

@@ -1,6 +1,6 @@
-package com.personalproject.razorpay.vault.dto.response;
+package com.codingshuttle.razorpay.vault.dto.response;
 
-import com.personalproject.razorpay.common.enums.CardBrand;
+import com.codingshuttle.razorpay.common.enums.CardBrand;
 
 public record TokenizeResponse(
         String token,

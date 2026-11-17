@@ -1,4 +1,4 @@
-package com.personalproject.razorpay.common.exception;
+package com.codingshuttle.razorpay.common.exception;
 
 public class IdempotencyConflictException extends RuntimeException {
 

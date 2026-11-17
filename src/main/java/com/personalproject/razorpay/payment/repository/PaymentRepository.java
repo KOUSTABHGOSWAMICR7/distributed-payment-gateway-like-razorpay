@@ -1,8 +1,8 @@
-package com.personalproject.razorpay.payment.repository;
+package com.codingshuttle.razorpay.payment.repository;
 
-import com.personalproject.razorpay.common.enums.PaymentStatus;
-import com.personalproject.razorpay.payment.entity.OrderRecord;
-import com.personalproject.razorpay.payment.entity.Payment;
+import com.codingshuttle.razorpay.common.enums.PaymentStatus;
+import com.codingshuttle.razorpay.payment.entity.OrderRecord;
+import com.codingshuttle.razorpay.payment.entity.Payment;
 import jakarta.persistence.LockModeType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Lock;
@@ -27,4 +27,8 @@ public interface PaymentRepository extends JpaRepository<Payment, UUID> {
     @Lock(LockModeType.PESSIMISTIC_WRITE)
     @Query("select p from Payment p where p.id = :paymentId")
     Optional<Payment> findByIdForUpdate(UUID paymentId);
+
+    @Lock(LockModeType.PESSIMISTIC_WRITE)
+    @Query("select p from Payment p where p.merchantId = :merchantId and p.status = :paymentStatus and p.settledAt is null")
+    List<Payment> findByMerchantIdAndStatusForUpdate(UUID merchantId, PaymentStatus paymentStatus);
 }

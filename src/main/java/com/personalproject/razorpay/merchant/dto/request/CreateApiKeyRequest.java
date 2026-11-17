@@ -1,6 +1,6 @@
-package com.personalproject.razorpay.merchant.dto.request;
+package com.codingshuttle.razorpay.merchant.dto.request;
 
-import com.personalproject.razorpay.common.enums.Environment;
+import com.codingshuttle.razorpay.common.enums.Environment;
 
 public record CreateApiKeyRequest(
         Environment environment

@@ -1,7 +1,7 @@
-package com.personalproject.razorpay.merchant.repository;
+package com.codingshuttle.razorpay.merchant.repository;
 
-import com.personalproject.razorpay.merchant.dto.response.ApiKeyResponse;
-import com.personalproject.razorpay.merchant.entity.ApiKey;
+import com.codingshuttle.razorpay.merchant.dto.response.ApiKeyResponse;
+import com.codingshuttle.razorpay.merchant.entity.ApiKey;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

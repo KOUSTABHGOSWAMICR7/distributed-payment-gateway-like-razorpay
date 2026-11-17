@@ -1,6 +1,6 @@
-package com.personalproject.razorpay.payment.dto.request;
+package com.codingshuttle.razorpay.payment.dto.request;
 
-import com.personalproject.razorpay.common.entity.Money;
+import com.codingshuttle.razorpay.common.entity.Money;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;

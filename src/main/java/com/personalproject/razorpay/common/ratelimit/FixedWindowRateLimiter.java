@@ -1,4 +1,4 @@
-package com.personalproject.razorpay.common.ratelimit;
+package com.codingshuttle.razorpay.common.ratelimit;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;

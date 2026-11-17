@@ -1,9 +1,9 @@
-package com.personalproject.razorpay.payment.entity;
+package com.codingshuttle.razorpay.payment.entity;
 
-import com.personalproject.razorpay.common.entity.BaseEntity;
-import com.personalproject.razorpay.common.enums.PaymentActor;
-import com.personalproject.razorpay.common.enums.PaymentEvent;
-import com.personalproject.razorpay.common.enums.PaymentStatus;
+import com.codingshuttle.razorpay.common.entity.BaseEntity;
+import com.codingshuttle.razorpay.common.enums.PaymentActor;
+import com.codingshuttle.razorpay.common.enums.PaymentEvent;
+import com.codingshuttle.razorpay.common.enums.PaymentStatus;
 import jakarta.persistence.*;
 import lombok.*;
 

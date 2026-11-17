@@ -1,9 +1,9 @@
-package com.personalproject.razorpay.payment.processor.strategy;
+package com.codingshuttle.razorpay.payment.processor.strategy;
 
-import com.personalproject.razorpay.common.util.RandomizerUtil;
-import com.personalproject.razorpay.payment.processor.PaymentProcessor;
-import com.personalproject.razorpay.payment.processor.dto.PaymentProcessorRequest;
-import com.personalproject.razorpay.payment.processor.dto.PaymentProcessorResponse;
+import com.codingshuttle.razorpay.common.util.RandomizerUtil;
+import com.codingshuttle.razorpay.payment.processor.PaymentProcessor;
+import com.codingshuttle.razorpay.payment.processor.dto.PaymentProcessorRequest;
+import com.codingshuttle.razorpay.payment.processor.dto.PaymentProcessorResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 

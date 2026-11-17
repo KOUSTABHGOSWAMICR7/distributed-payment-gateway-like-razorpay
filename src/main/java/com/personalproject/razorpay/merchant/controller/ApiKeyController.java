@@ -1,10 +1,10 @@
-package com.personalproject.razorpay.merchant.controller;
+package com.codingshuttle.razorpay.merchant.controller;
 
-import com.personalproject.razorpay.merchant.dto.request.CreateApiKeyRequest;
-import com.personalproject.razorpay.merchant.dto.response.ApiKeyCreateResponse;
-import com.personalproject.razorpay.merchant.dto.response.ApiKeyResponse;
-import com.personalproject.razorpay.merchant.security.MerchantContext;
-import com.personalproject.razorpay.merchant.service.ApiKeyService;
+import com.codingshuttle.razorpay.merchant.dto.request.CreateApiKeyRequest;
+import com.codingshuttle.razorpay.merchant.dto.response.ApiKeyCreateResponse;
+import com.codingshuttle.razorpay.merchant.dto.response.ApiKeyResponse;
+import com.codingshuttle.razorpay.merchant.security.MerchantContext;
+import com.codingshuttle.razorpay.merchant.service.ApiKeyService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

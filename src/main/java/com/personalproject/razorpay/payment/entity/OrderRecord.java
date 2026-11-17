@@ -1,8 +1,8 @@
-package com.personalproject.razorpay.payment.entity;
+package com.codingshuttle.razorpay.payment.entity;
 
-import com.personalproject.razorpay.common.entity.BaseEntity;
-import com.personalproject.razorpay.common.entity.Money;
-import com.personalproject.razorpay.common.enums.OrderStatus;
+import com.codingshuttle.razorpay.common.entity.BaseEntity;
+import com.codingshuttle.razorpay.common.entity.Money;
+import com.codingshuttle.razorpay.common.enums.OrderStatus;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.JdbcTypeCode;

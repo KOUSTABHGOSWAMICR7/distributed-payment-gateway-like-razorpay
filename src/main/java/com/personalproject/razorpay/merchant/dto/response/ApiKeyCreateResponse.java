@@ -1,6 +1,6 @@
-package com.personalproject.razorpay.merchant.dto.response;
+package com.codingshuttle.razorpay.merchant.dto.response;
 
-import com.personalproject.razorpay.common.enums.Environment;
+import com.codingshuttle.razorpay.common.enums.Environment;
 
 import java.util.UUID;
 

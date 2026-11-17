@@ -1,7 +1,8 @@
-package com.personalproject.razorpay.common.enums;
+package com.codingshuttle.razorpay.common.enums;
 
 public enum SettlementStatus {
     INITIATED,
+    TRANSFER_PENDING,
     PROCESSED,
     FAILED
 }

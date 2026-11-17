@@ -1,4 +1,4 @@
-package com.personalproject.razorpay.common.util;
+package com.codingshuttle.razorpay.common.util;
 
 import org.springframework.stereotype.Component;
 

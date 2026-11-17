@@ -1,15 +1,21 @@
-package com.personalproject.razorpay.operations.entity;
+package com.codingshuttle.razorpay.operations.entity;
 
-import com.personalproject.razorpay.common.entity.BaseEntity;
-import com.personalproject.razorpay.common.entity.Money;
-import com.personalproject.razorpay.common.enums.SettlementStatus;
+import com.codingshuttle.razorpay.common.entity.BaseEntity;
+import com.codingshuttle.razorpay.common.entity.Money;
+import com.codingshuttle.razorpay.common.enums.SettlementStatus;
 import jakarta.persistence.*;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
 @Table(name = "settlement")
+@Builder
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Settlement extends BaseEntity {
 
     @Id
@@ -62,5 +68,7 @@ public class Settlement extends BaseEntity {
     private String bankReference;
 
     private LocalDateTime processedAt;
+
+    private String failureReason;
 
 }

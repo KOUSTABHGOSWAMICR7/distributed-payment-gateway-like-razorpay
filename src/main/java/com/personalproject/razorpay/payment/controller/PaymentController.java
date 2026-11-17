@@ -1,9 +1,9 @@
-package com.personalproject.razorpay.payment.controller;
+package com.codingshuttle.razorpay.payment.controller;
 
-import com.personalproject.razorpay.merchant.security.MerchantContext;
-import com.personalproject.razorpay.payment.dto.request.PaymentInitRequest;
-import com.personalproject.razorpay.payment.dto.response.PaymentResponse;
-import com.personalproject.razorpay.payment.service.PaymentService;
+import com.codingshuttle.razorpay.merchant.security.MerchantContext;
+import com.codingshuttle.razorpay.payment.dto.request.PaymentInitRequest;
+import com.codingshuttle.razorpay.payment.dto.response.PaymentResponse;
+import com.codingshuttle.razorpay.payment.service.PaymentService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

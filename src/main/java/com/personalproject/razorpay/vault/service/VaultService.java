@@ -1,9 +1,9 @@
-package com.personalproject.razorpay.vault.service;
+package com.codingshuttle.razorpay.vault.service;
 
-import com.personalproject.razorpay.common.entity.Money;
-import com.personalproject.razorpay.payment.processor.dto.PaymentProcessorResponse;
-import com.personalproject.razorpay.vault.dto.request.TokenizeRequest;
-import com.personalproject.razorpay.vault.dto.response.TokenizeResponse;
+import com.codingshuttle.razorpay.common.entity.Money;
+import com.codingshuttle.razorpay.payment.processor.dto.PaymentProcessorResponse;
+import com.codingshuttle.razorpay.vault.dto.request.TokenizeRequest;
+import com.codingshuttle.razorpay.vault.dto.response.TokenizeResponse;
 import org.jspecify.annotations.Nullable;
 
 import java.util.Map;

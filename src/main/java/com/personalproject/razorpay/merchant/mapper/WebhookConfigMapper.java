@@ -1,7 +1,7 @@
-package com.personalproject.razorpay.merchant.mapper;
+package com.codingshuttle.razorpay.merchant.mapper;
 
-import com.personalproject.razorpay.merchant.dto.response.WebhookConfigResponse;
-import com.personalproject.razorpay.merchant.entity.MerchantWebhookConfig;
+import com.codingshuttle.razorpay.merchant.dto.response.WebhookConfigResponse;
+import com.codingshuttle.razorpay.merchant.entity.MerchantWebhookConfig;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingConstants;

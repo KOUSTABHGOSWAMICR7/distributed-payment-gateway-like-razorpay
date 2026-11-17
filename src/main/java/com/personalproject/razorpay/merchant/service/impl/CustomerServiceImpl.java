@@ -1,11 +1,11 @@
-package com.personalproject.razorpay.merchant.service.impl;
+package com.codingshuttle.razorpay.merchant.service.impl;
 
-import com.personalproject.razorpay.common.exception.ResourceNotFoundException;
-import com.personalproject.razorpay.merchant.entity.Customer;
-import com.personalproject.razorpay.merchant.entity.Merchant;
-import com.personalproject.razorpay.merchant.repository.CustomerRepository;
-import com.personalproject.razorpay.merchant.repository.MerchantRepository;
-import com.personalproject.razorpay.merchant.service.CustomerService;
+import com.codingshuttle.razorpay.common.exception.ResourceNotFoundException;
+import com.codingshuttle.razorpay.merchant.entity.Customer;
+import com.codingshuttle.razorpay.merchant.entity.Merchant;
+import com.codingshuttle.razorpay.merchant.repository.CustomerRepository;
+import com.codingshuttle.razorpay.merchant.repository.MerchantRepository;
+import com.codingshuttle.razorpay.merchant.service.CustomerService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
