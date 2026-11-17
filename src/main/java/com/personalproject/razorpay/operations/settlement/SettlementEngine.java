@@ -1,6 +1,6 @@
-package com.codingshuttle.razorpay.operations.settlement;
+package com.personalproject.razorpay.operations.settlement;
 
-import com.codingshuttle.razorpay.merchant.api.MerchantLookupService;
+import com.personalproject.razorpay.merchant.api.MerchantLookupService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;

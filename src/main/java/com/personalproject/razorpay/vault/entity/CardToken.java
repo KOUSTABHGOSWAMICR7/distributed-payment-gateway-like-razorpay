@@ -1,6 +1,6 @@
-package com.codingshuttle.razorpay.vault.entity;
+package com.personalproject.razorpay.vault.entity;
 
-import com.codingshuttle.razorpay.common.entity.BaseEntity;
+import com.personalproject.razorpay.common.entity.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
 

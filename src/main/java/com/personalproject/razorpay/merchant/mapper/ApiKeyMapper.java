@@ -1,8 +1,8 @@
-package com.codingshuttle.razorpay.merchant.mapper;
+package com.personalproject.razorpay.merchant.mapper;
 
-import com.codingshuttle.razorpay.merchant.dto.response.ApiKeyCreateResponse;
-import com.codingshuttle.razorpay.merchant.dto.response.ApiKeyResponse;
-import com.codingshuttle.razorpay.merchant.entity.ApiKey;
+import com.personalproject.razorpay.merchant.dto.response.ApiKeyCreateResponse;
+import com.personalproject.razorpay.merchant.dto.response.ApiKeyResponse;
+import com.personalproject.razorpay.merchant.entity.ApiKey;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
 

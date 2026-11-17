@@ -1,6 +1,6 @@
-package com.codingshuttle.razorpay.common.config;
+package com.personalproject.razorpay.common.config;
 
-import com.codingshuttle.razorpay.common.enums.EventAggregateType;
+import com.personalproject.razorpay.common.enums.EventAggregateType;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;

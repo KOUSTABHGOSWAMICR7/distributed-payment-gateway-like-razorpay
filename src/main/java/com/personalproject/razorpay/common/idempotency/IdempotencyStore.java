@@ -1,4 +1,4 @@
-package com.codingshuttle.razorpay.common.idempotency;
+package com.personalproject.razorpay.common.idempotency;
 
 import java.time.Duration;
 import java.util.Optional;

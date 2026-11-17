@@ -1,8 +1,8 @@
-package com.codingshuttle.razorpay.payment.service;
+package com.personalproject.razorpay.payment.service;
 
-import com.codingshuttle.razorpay.payment.dto.request.CreateOrderRequest;
-import com.codingshuttle.razorpay.payment.dto.response.OrderResponse;
-import com.codingshuttle.razorpay.payment.dto.response.PaymentResponse;
+import com.personalproject.razorpay.payment.dto.request.CreateOrderRequest;
+import com.personalproject.razorpay.payment.dto.response.OrderResponse;
+import com.personalproject.razorpay.payment.dto.response.PaymentResponse;
 
 import java.util.List;
 import java.util.UUID;

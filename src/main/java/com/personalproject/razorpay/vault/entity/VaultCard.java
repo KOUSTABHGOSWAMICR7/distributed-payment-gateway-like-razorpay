@@ -1,7 +1,7 @@
-package com.codingshuttle.razorpay.vault.entity;
+package com.personalproject.razorpay.vault.entity;
 
-import com.codingshuttle.razorpay.common.entity.BaseEntity;
-import com.codingshuttle.razorpay.common.enums.CardBrand;
+import com.personalproject.razorpay.common.entity.BaseEntity;
+import com.personalproject.razorpay.common.enums.CardBrand;
 import jakarta.persistence.*;
 import lombok.*;
 

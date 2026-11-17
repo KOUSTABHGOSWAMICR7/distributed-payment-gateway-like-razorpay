@@ -1,9 +1,9 @@
-package com.codingshuttle.razorpay.merchant.controller;
+package com.personalproject.razorpay.merchant.controller;
 
-import com.codingshuttle.razorpay.merchant.dto.request.UpdateWebhookConfigRequest;
-import com.codingshuttle.razorpay.merchant.dto.response.WebhookConfigResponse;
-import com.codingshuttle.razorpay.merchant.security.MerchantContext;
-import com.codingshuttle.razorpay.merchant.service.WebhookConfigService;
+import com.personalproject.razorpay.merchant.dto.request.UpdateWebhookConfigRequest;
+import com.personalproject.razorpay.merchant.dto.response.WebhookConfigResponse;
+import com.personalproject.razorpay.merchant.security.MerchantContext;
+import com.personalproject.razorpay.merchant.service.WebhookConfigService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

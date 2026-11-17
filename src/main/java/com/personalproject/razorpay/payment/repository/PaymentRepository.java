@@ -1,8 +1,8 @@
-package com.codingshuttle.razorpay.payment.repository;
+package com.personalproject.razorpay.payment.repository;
 
-import com.codingshuttle.razorpay.common.enums.PaymentStatus;
-import com.codingshuttle.razorpay.payment.entity.OrderRecord;
-import com.codingshuttle.razorpay.payment.entity.Payment;
+import com.personalproject.razorpay.common.enums.PaymentStatus;
+import com.personalproject.razorpay.payment.entity.OrderRecord;
+import com.personalproject.razorpay.payment.entity.Payment;
 import jakarta.persistence.LockModeType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Lock;

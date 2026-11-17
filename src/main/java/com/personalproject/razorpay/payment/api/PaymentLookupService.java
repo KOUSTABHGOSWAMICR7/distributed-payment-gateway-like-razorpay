@@ -1,6 +1,6 @@
-package com.codingshuttle.razorpay.payment.api;
+package com.personalproject.razorpay.payment.api;
 
-import com.codingshuttle.razorpay.payment.entity.Payment;
+import com.personalproject.razorpay.payment.entity.Payment;
 
 import java.util.List;
 import java.util.UUID;

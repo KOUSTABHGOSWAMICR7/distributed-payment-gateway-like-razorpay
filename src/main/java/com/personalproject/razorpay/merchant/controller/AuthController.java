@@ -1,10 +1,10 @@
-package com.codingshuttle.razorpay.merchant.controller;
+package com.personalproject.razorpay.merchant.controller;
 
-import com.codingshuttle.razorpay.merchant.dto.request.LoginRequest;
-import com.codingshuttle.razorpay.merchant.dto.request.MerchantSignupRequest;
-import com.codingshuttle.razorpay.merchant.dto.response.LoginResponse;
-import com.codingshuttle.razorpay.merchant.dto.response.MerchantResponse;
-import com.codingshuttle.razorpay.merchant.service.AuthService;
+import com.personalproject.razorpay.merchant.dto.request.LoginRequest;
+import com.personalproject.razorpay.merchant.dto.request.MerchantSignupRequest;
+import com.personalproject.razorpay.merchant.dto.response.LoginResponse;
+import com.personalproject.razorpay.merchant.dto.response.MerchantResponse;
+import com.personalproject.razorpay.merchant.service.AuthService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

@@ -1,9 +1,9 @@
-package com.codingshuttle.razorpay.payment.service.impl;
+package com.personalproject.razorpay.payment.service.impl;
 
-import com.codingshuttle.razorpay.common.enums.PaymentStatus;
-import com.codingshuttle.razorpay.payment.api.PaymentLookupService;
-import com.codingshuttle.razorpay.payment.entity.Payment;
-import com.codingshuttle.razorpay.payment.repository.PaymentRepository;
+import com.personalproject.razorpay.common.enums.PaymentStatus;
+import com.personalproject.razorpay.payment.api.PaymentLookupService;
+import com.personalproject.razorpay.payment.entity.Payment;
+import com.personalproject.razorpay.payment.repository.PaymentRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

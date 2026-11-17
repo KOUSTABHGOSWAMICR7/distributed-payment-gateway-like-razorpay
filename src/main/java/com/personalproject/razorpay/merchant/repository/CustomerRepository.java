@@ -1,6 +1,6 @@
-package com.codingshuttle.razorpay.merchant.repository;
+package com.personalproject.razorpay.merchant.repository;
 
-import com.codingshuttle.razorpay.merchant.entity.Customer;
+import com.personalproject.razorpay.merchant.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

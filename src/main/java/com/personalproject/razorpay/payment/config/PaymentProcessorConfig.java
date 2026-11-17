@@ -1,10 +1,10 @@
-package com.codingshuttle.razorpay.payment.config;
+package com.personalproject.razorpay.payment.config;
 
-import com.codingshuttle.razorpay.common.enums.PaymentMethod;
-import com.codingshuttle.razorpay.payment.processor.PaymentProcessor;
-import com.codingshuttle.razorpay.payment.processor.strategy.UpiPaymentProcessor;
-import com.codingshuttle.razorpay.payment.processor.strategy.NetBankingPaymentProcessor;
-import com.codingshuttle.razorpay.payment.processor.strategy.CardPaymentProcessor;
+import com.personalproject.razorpay.common.enums.PaymentMethod;
+import com.personalproject.razorpay.payment.processor.PaymentProcessor;
+import com.personalproject.razorpay.payment.processor.strategy.UpiPaymentProcessor;
+import com.personalproject.razorpay.payment.processor.strategy.NetBankingPaymentProcessor;
+import com.personalproject.razorpay.payment.processor.strategy.CardPaymentProcessor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

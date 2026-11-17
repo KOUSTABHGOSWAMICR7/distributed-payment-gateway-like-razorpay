@@ -1,8 +1,8 @@
-package com.codingshuttle.razorpay.operations.settlement;
+package com.personalproject.razorpay.operations.settlement;
 
-import com.codingshuttle.razorpay.common.entity.Money;
-import com.codingshuttle.razorpay.common.util.RandomizerUtil;
-import com.codingshuttle.razorpay.operations.settlement.dto.BankTransferResult;
+import com.personalproject.razorpay.common.entity.Money;
+import com.personalproject.razorpay.common.util.RandomizerUtil;
+import com.personalproject.razorpay.operations.settlement.dto.BankTransferResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 

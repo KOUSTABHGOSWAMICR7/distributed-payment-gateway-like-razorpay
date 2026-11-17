@@ -1,4 +1,4 @@
-package com.codingshuttle.razorpay.merchant.dto.response;
+package com.personalproject.razorpay.merchant.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 

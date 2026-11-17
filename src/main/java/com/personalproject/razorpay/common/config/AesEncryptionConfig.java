@@ -1,4 +1,4 @@
-package com.codingshuttle.razorpay.common.config;
+package com.personalproject.razorpay.common.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

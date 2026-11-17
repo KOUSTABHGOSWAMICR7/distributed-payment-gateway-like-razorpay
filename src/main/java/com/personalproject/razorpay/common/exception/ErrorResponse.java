@@ -1,4 +1,4 @@
-package com.codingshuttle.razorpay.common.exception;
+package com.personalproject.razorpay.common.exception;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 

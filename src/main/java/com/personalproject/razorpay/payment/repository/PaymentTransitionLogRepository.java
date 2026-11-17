@@ -1,6 +1,6 @@
-package com.codingshuttle.razorpay.payment.repository;
+package com.personalproject.razorpay.payment.repository;
 
-import com.codingshuttle.razorpay.payment.entity.PaymentTransitionLog;
+import com.personalproject.razorpay.payment.entity.PaymentTransitionLog;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

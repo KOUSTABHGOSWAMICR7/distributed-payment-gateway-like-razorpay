@@ -1,8 +1,8 @@
-package com.codingshuttle.razorpay.merchant.mapper;
+package com.personalproject.razorpay.merchant.mapper;
 
-import com.codingshuttle.razorpay.merchant.dto.request.MerchantSignupRequest;
-import com.codingshuttle.razorpay.merchant.dto.response.MerchantResponse;
-import com.codingshuttle.razorpay.merchant.entity.Merchant;
+import com.personalproject.razorpay.merchant.dto.request.MerchantSignupRequest;
+import com.personalproject.razorpay.merchant.dto.response.MerchantResponse;
+import com.personalproject.razorpay.merchant.entity.Merchant;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
 

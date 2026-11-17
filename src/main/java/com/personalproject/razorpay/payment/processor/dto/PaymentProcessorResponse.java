@@ -1,4 +1,4 @@
-package com.codingshuttle.razorpay.payment.processor.dto;
+package com.personalproject.razorpay.payment.processor.dto;
 
 public sealed interface PaymentProcessorResponse permits
         PaymentProcessorResponse.Pending,

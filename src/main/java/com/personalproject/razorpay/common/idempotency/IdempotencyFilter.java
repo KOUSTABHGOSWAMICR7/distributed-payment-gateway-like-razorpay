@@ -1,7 +1,7 @@
-package com.codingshuttle.razorpay.common.idempotency;
+package com.personalproject.razorpay.common.idempotency;
 
-import com.codingshuttle.razorpay.common.exception.IdempotencyConflictException;
-import com.codingshuttle.razorpay.merchant.security.MerchantContext;
+import com.personalproject.razorpay.common.exception.IdempotencyConflictException;
+import com.personalproject.razorpay.merchant.security.MerchantContext;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

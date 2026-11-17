@@ -1,11 +1,11 @@
-package com.codingshuttle.razorpay.payment.statemachine;
+package com.personalproject.razorpay.payment.statemachine;
 
-import com.codingshuttle.razorpay.common.enums.PaymentActor;
-import com.codingshuttle.razorpay.common.enums.PaymentEvent;
-import com.codingshuttle.razorpay.common.enums.PaymentStatus;
-import com.codingshuttle.razorpay.payment.entity.Payment;
-import com.codingshuttle.razorpay.payment.entity.PaymentTransitionLog;
-import com.codingshuttle.razorpay.payment.repository.PaymentTransitionLogRepository;
+import com.personalproject.razorpay.common.enums.PaymentActor;
+import com.personalproject.razorpay.common.enums.PaymentEvent;
+import com.personalproject.razorpay.common.enums.PaymentStatus;
+import com.personalproject.razorpay.payment.entity.Payment;
+import com.personalproject.razorpay.payment.entity.PaymentTransitionLog;
+import com.personalproject.razorpay.payment.repository.PaymentTransitionLogRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

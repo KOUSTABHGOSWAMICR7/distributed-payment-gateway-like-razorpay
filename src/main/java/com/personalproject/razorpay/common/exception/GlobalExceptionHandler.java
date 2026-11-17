@@ -1,4 +1,4 @@
-package com.codingshuttle.razorpay.common.exception;
+package com.personalproject.razorpay.common.exception;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;

@@ -1,12 +1,12 @@
-package com.codingshuttle.razorpay.payment.simulator;
+package com.personalproject.razorpay.payment.simulator;
 
-import com.codingshuttle.razorpay.common.enums.ChaosMode;
-import com.codingshuttle.razorpay.common.enums.PaymentMethod;
-import com.codingshuttle.razorpay.common.enums.PaymentStatus;
-import com.codingshuttle.razorpay.common.util.RandomizerUtil;
-import com.codingshuttle.razorpay.payment.entity.Payment;
-import com.codingshuttle.razorpay.payment.repository.PaymentRepository;
-import com.codingshuttle.razorpay.payment.service.PaymentService;
+import com.personalproject.razorpay.common.enums.ChaosMode;
+import com.personalproject.razorpay.common.enums.PaymentMethod;
+import com.personalproject.razorpay.common.enums.PaymentStatus;
+import com.personalproject.razorpay.common.util.RandomizerUtil;
+import com.personalproject.razorpay.payment.entity.Payment;
+import com.personalproject.razorpay.payment.repository.PaymentRepository;
+import com.personalproject.razorpay.payment.service.PaymentService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;

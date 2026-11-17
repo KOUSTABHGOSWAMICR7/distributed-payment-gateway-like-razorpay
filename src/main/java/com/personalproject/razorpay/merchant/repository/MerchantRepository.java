@@ -1,7 +1,7 @@
-package com.codingshuttle.razorpay.merchant.repository;
+package com.personalproject.razorpay.merchant.repository;
 
-import com.codingshuttle.razorpay.common.enums.MerchantStatus;
-import com.codingshuttle.razorpay.merchant.entity.Merchant;
+import com.personalproject.razorpay.common.enums.MerchantStatus;
+import com.personalproject.razorpay.merchant.entity.Merchant;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Arrays;

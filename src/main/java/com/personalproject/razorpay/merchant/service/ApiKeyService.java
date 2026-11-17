@@ -1,8 +1,8 @@
-package com.codingshuttle.razorpay.merchant.service;
+package com.personalproject.razorpay.merchant.service;
 
-import com.codingshuttle.razorpay.merchant.dto.request.CreateApiKeyRequest;
-import com.codingshuttle.razorpay.merchant.dto.response.ApiKeyCreateResponse;
-import com.codingshuttle.razorpay.merchant.dto.response.ApiKeyResponse;
+import com.personalproject.razorpay.merchant.dto.request.CreateApiKeyRequest;
+import com.personalproject.razorpay.merchant.dto.response.ApiKeyCreateResponse;
+import com.personalproject.razorpay.merchant.dto.response.ApiKeyResponse;
 import org.jspecify.annotations.Nullable;
 
 import java.util.List;

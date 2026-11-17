@@ -1,7 +1,7 @@
-package com.codingshuttle.razorpay.operations.repository;
+package com.personalproject.razorpay.operations.repository;
 
-import com.codingshuttle.razorpay.common.enums.SettlementStatus;
-import com.codingshuttle.razorpay.operations.entity.Settlement;
+import com.personalproject.razorpay.common.enums.SettlementStatus;
+import com.personalproject.razorpay.operations.entity.Settlement;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

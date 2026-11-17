@@ -1,7 +1,7 @@
-package com.codingshuttle.razorpay.payment.gateway.dto;
+package com.personalproject.razorpay.payment.gateway.dto;
 
-import com.codingshuttle.razorpay.common.entity.Money;
-import com.codingshuttle.razorpay.common.enums.PaymentMethod;
+import com.personalproject.razorpay.common.entity.Money;
+import com.personalproject.razorpay.common.enums.PaymentMethod;
 
 import java.util.Map;
 import java.util.UUID;

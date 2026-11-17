@@ -1,4 +1,4 @@
-package com.codingshuttle.razorpay.common.enums;
+package com.personalproject.razorpay.common.enums;
 
 public enum OrderStatus {
     CREATED,

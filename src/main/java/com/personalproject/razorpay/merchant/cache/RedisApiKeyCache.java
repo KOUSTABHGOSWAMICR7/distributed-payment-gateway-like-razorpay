@@ -1,4 +1,4 @@
-package com.codingshuttle.razorpay.merchant.cache;
+package com.personalproject.razorpay.merchant.cache;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

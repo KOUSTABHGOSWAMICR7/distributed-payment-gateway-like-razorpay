@@ -1,7 +1,7 @@
-package com.codingshuttle.razorpay.payment.repository;
+package com.personalproject.razorpay.payment.repository;
 
-import com.codingshuttle.razorpay.common.enums.OutboxStatus;
-import com.codingshuttle.razorpay.payment.entity.OutboxEvent;
+import com.personalproject.razorpay.common.enums.OutboxStatus;
+import com.personalproject.razorpay.payment.entity.OutboxEvent;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

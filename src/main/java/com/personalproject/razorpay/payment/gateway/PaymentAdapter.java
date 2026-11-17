@@ -1,7 +1,7 @@
-package com.codingshuttle.razorpay.payment.gateway;
+package com.personalproject.razorpay.payment.gateway;
 
-import com.codingshuttle.razorpay.payment.gateway.dto.PaymentRequest;
-import com.codingshuttle.razorpay.payment.gateway.dto.PaymentResult;
+import com.personalproject.razorpay.payment.gateway.dto.PaymentRequest;
+import com.personalproject.razorpay.payment.gateway.dto.PaymentResult;
 
 import java.util.UUID;
 

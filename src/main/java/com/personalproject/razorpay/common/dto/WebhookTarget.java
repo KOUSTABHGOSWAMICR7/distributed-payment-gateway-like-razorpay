@@ -1,4 +1,4 @@
-package com.codingshuttle.razorpay.common.dto;
+package com.personalproject.razorpay.common.dto;
 
 import java.util.UUID;
 

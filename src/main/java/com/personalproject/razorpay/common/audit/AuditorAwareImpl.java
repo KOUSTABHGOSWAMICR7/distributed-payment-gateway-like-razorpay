@@ -1,6 +1,6 @@
-package com.codingshuttle.razorpay.common.audit;
+package com.personalproject.razorpay.common.audit;
 
-import com.codingshuttle.razorpay.merchant.security.MerchantContext;
+import com.personalproject.razorpay.merchant.security.MerchantContext;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.stereotype.Component;

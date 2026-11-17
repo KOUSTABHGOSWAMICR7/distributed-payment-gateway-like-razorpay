@@ -1,4 +1,4 @@
-package com.codingshuttle.razorpay.operations.webhook;
+package com.personalproject.razorpay.operations.webhook;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

@@ -1,6 +1,6 @@
-package com.codingshuttle.razorpay.merchant.cache;
+package com.personalproject.razorpay.merchant.cache;
 
-import com.codingshuttle.razorpay.common.enums.Environment;
+import com.personalproject.razorpay.common.enums.Environment;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

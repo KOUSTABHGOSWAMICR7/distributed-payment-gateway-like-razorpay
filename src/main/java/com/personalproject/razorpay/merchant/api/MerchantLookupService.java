@@ -1,7 +1,7 @@
-package com.codingshuttle.razorpay.merchant.api;
+package com.personalproject.razorpay.merchant.api;
 
-import com.codingshuttle.razorpay.common.dto.SettlementBankDetails;
-import com.codingshuttle.razorpay.common.dto.WebhookTarget;
+import com.personalproject.razorpay.common.dto.SettlementBankDetails;
+import com.personalproject.razorpay.common.dto.WebhookTarget;
 
 import java.util.List;
 import java.util.UUID;

@@ -1,6 +1,6 @@
-package com.codingshuttle.razorpay.vault.dto.request;
+package com.personalproject.razorpay.vault.dto.request;
 
-import com.codingshuttle.razorpay.vault.validation.ExpiryYear;
+import com.personalproject.razorpay.vault.validation.ExpiryYear;
 import jakarta.validation.constraints.*;
 import org.hibernate.validator.constraints.LuhnCheck;
 

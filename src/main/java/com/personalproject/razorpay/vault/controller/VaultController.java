@@ -1,9 +1,9 @@
-package com.codingshuttle.razorpay.vault.controller;
+package com.personalproject.razorpay.vault.controller;
 
-import com.codingshuttle.razorpay.merchant.security.MerchantContext;
-import com.codingshuttle.razorpay.vault.dto.request.TokenizeRequest;
-import com.codingshuttle.razorpay.vault.dto.response.TokenizeResponse;
-import com.codingshuttle.razorpay.vault.service.VaultService;
+import com.personalproject.razorpay.merchant.security.MerchantContext;
+import com.personalproject.razorpay.vault.dto.request.TokenizeRequest;
+import com.personalproject.razorpay.vault.dto.response.TokenizeResponse;
+import com.personalproject.razorpay.vault.service.VaultService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;

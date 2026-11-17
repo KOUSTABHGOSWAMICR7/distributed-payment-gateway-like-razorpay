@@ -1,8 +1,8 @@
-package com.codingshuttle.razorpay.payment.processor;
+package com.personalproject.razorpay.payment.processor;
 
-import com.codingshuttle.razorpay.common.enums.PaymentMethod;
-import com.codingshuttle.razorpay.payment.processor.dto.PaymentProcessorRequest;
-import com.codingshuttle.razorpay.payment.processor.dto.PaymentProcessorResponse;
+import com.personalproject.razorpay.common.enums.PaymentMethod;
+import com.personalproject.razorpay.payment.processor.dto.PaymentProcessorRequest;
+import com.personalproject.razorpay.payment.processor.dto.PaymentProcessorResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

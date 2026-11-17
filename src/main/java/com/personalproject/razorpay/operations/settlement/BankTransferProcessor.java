@@ -1,7 +1,7 @@
-package com.codingshuttle.razorpay.operations.settlement;
+package com.personalproject.razorpay.operations.settlement;
 
-import com.codingshuttle.razorpay.common.entity.Money;
-import com.codingshuttle.razorpay.operations.settlement.dto.BankTransferResult;
+import com.personalproject.razorpay.common.entity.Money;
+import com.personalproject.razorpay.operations.settlement.dto.BankTransferResult;
 
 import java.util.UUID;
 

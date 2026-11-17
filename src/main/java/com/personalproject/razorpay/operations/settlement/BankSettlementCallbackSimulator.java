@@ -1,9 +1,9 @@
-package com.codingshuttle.razorpay.operations.settlement;
+package com.personalproject.razorpay.operations.settlement;
 
-import com.codingshuttle.razorpay.common.enums.SettlementStatus;
-import com.codingshuttle.razorpay.common.util.RandomizerUtil;
-import com.codingshuttle.razorpay.operations.entity.Settlement;
-import com.codingshuttle.razorpay.operations.repository.SettlementRepository;
+import com.personalproject.razorpay.common.enums.SettlementStatus;
+import com.personalproject.razorpay.common.util.RandomizerUtil;
+import com.personalproject.razorpay.operations.entity.Settlement;
+import com.personalproject.razorpay.operations.repository.SettlementRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;

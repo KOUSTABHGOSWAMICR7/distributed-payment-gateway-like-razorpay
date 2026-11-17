@@ -1,9 +1,9 @@
-package com.codingshuttle.razorpay.payment.entity;
+package com.personalproject.razorpay.payment.entity;
 
-import com.codingshuttle.razorpay.common.entity.BaseEntity;
-import com.codingshuttle.razorpay.common.enums.EventAggregateType;
-import com.codingshuttle.razorpay.common.enums.OutboxStatus;
-import com.codingshuttle.razorpay.payment.gateway.dto.PaymentResult;
+import com.personalproject.razorpay.common.entity.BaseEntity;
+import com.personalproject.razorpay.common.enums.EventAggregateType;
+import com.personalproject.razorpay.common.enums.OutboxStatus;
+import com.personalproject.razorpay.payment.gateway.dto.PaymentResult;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.JdbcTypeCode;

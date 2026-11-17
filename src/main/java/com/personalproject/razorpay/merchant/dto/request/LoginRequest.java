@@ -1,4 +1,4 @@
-package com.codingshuttle.razorpay.merchant.dto.request;
+package com.personalproject.razorpay.merchant.dto.request;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

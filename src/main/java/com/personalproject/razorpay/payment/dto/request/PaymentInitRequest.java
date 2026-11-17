@@ -1,6 +1,6 @@
-package com.codingshuttle.razorpay.payment.dto.request;
+package com.personalproject.razorpay.payment.dto.request;
 
-import com.codingshuttle.razorpay.common.enums.PaymentMethod;
+import com.personalproject.razorpay.common.enums.PaymentMethod;
 import jakarta.validation.constraints.NotNull;
 
 import java.util.Map;
